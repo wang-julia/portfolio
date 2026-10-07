@@ -3,326 +3,353 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Julia Wang — Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Julia Wang</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css?v=39" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav id="navbar">
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header id="navbar">
+    <div class="scroll-progress" role="progressbar" aria-label="Page progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <span></span>
+    </div>
     <div class="nav-inner">
-      <a class="nav-logo" href="#about">Julia Wang</a>
-      <ul class="nav-links">
-        <li><a href="#about-me">About Me</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
+      <a class="nav-logo" href="#top">Julia Wang</a>
+      <nav aria-label="Page">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- HERO / ABOUT -->
-  <section id="about">
-    <div class="about-inner">
-      <div class="about-text">
-        <p class="greeting">Hi, I'm</p>
+  <main>
+    <section id="top" class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Columbia University <span class="dot" aria-hidden="true"></span> B.S. Computer Science</p>
         <h1>Julia Wang</h1>
-        <h2>Software Engineer</h2>
-        <p class="about-bio">Interested in full-stack, systems programming, and AI/ML.</p>
-        <div class="about-links">
-          <a href="#projects" class="btn-primary">Projects</a>
-          <a href="https://drive.google.com/file/d/13C04675VN2G1rq2-ZNMlPHGZnaRzeUtU/view?usp=sharing" target="_blank" rel="noopener" class="btn-secondary">Resume</a>
-        </div>
-        <div class="hero-social">
-          <a href="mailto:jwang.kq@gmail.com" class="hero-social-icon" title="Email">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/yjuliawang/" target="_blank" rel="noopener" class="hero-social-icon" title="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-          <a href="https://github.com/wang-julia" target="_blank" rel="noopener" class="hero-social-icon" title="GitHub">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
+        <p class="lede">Full-Stack, Systems Programming, and AI/ML.</p>
+        <div class="hero-links">
+          <a class="resume" href="https://drive.google.com/file/d/1GAc6OFe9pJGJmtInoXFxtSj1iFJ6mlkV/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
+          <a href="mailto:jwang.kq@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/yjuliawang/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/wang-julia" target="_blank" rel="noopener">GitHub</a>
         </div>
       </div>
-      <div class="about-avatar">
-        <div class="avatar-placeholder">
-          <img src="images/photo.jpg" alt="Julia Wang" />
-        </div>
-      </div>
-    </div>
-  </section>
+      <figure class="portrait">
+        <img src="images/photo.jpg" alt="Julia Wang" />
+      </figure>
+    </section>
 
-  <!-- ABOUT ME -->
-  <section id="about-me">
-    <div class="section-inner">
-      <h2 class="section-title">About Me</h2>
-      <!-- Top: photo + fact cards side by side -->
-      <div class="aboutme-top">
-        <div class="aboutme-photo-frame empty" id="aboutme-frame">
-          <img src="images/photo2.jpg" alt="Julia Wang" onerror="this.parentElement.classList.add('img-missing'); this.style.display='none'" />
-          <span class="photo-placeholder-text">Add photo2.jpg</span>
-        </div>
-        <div class="aboutme-right-col">
-          <div class="aboutme-facts">
-            <div class="fact-card">
-              <span class="fact-label">University</span>
-              <span class="fact-value">Columbia University</span>
-            </div>
-            <div class="fact-card">
-              <span class="fact-label">Major</span>
-              <span class="fact-value">B.S Computer Science</span>
-            </div>
-          </div>
-          <div class="aboutme-text">
-            <p> 
-              
+    <section id="about">
+      <div class="section-inner">
+        <h2>About</h2>
+        <div class="about-grid">
+          <figure class="about-photo">
+            <img src="images/photo2.jpg" alt="Julia Wang in front of a wall of NASA mission patches" />
+          </figure>
+          <div class="prose">
+            <p>
+              Hey, I'm Julia! I'm a computer science student at Columbia Engineering, passionate about building
+              software for good. My interests span full-stack development, systems programming, and AI/ML,
+              with a particular focus on applying software to physical systems, healthcare, and finance.
             </p>
             <p>
-              I'm a undergraduate <span class="highlight">computer science</span> student at Columbia Engineering, passionate about building
-              software for physical systems. My interests span <span class="highlight">full-stack development</span> and <span class="highlight">system programming</span>,
-              with a focus on <span class="highlight">AI/ML, aerospace, robotics, autonomous vehicles</span> and <span class="highlight">AR/VR</span>.
-            </p>
-            <p>
-              I am currently a software engineering intern at Infosys working on autonomous mobile robots. 
-              I have previously engineered solutions for NASA Spacesuit User Interface Technologies and Columbia's Economic Complexity Lab. 
-            </p>
-            <p>
-              Outside of coding, I enjoy hiking, swimming, pickleball, crocheting, and roller coasters!
+              Outside of coding, I enjoy playing mahjong, swimming, pickleball, crocheting, and trying new eats around NYC!
             </p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
-    <div class="section-inner">
-      <h2 class="section-title">Experience</h2>
-
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <span class="job-title">Software Engineer Intern</span>
-              <span class="job-date">June 2026 - Present</span>
+    <section id="experience">
+      <div class="section-inner">
+        <h2>Experience</h2>
+        <div class="roles">
+          <article class="role" data-detail="cobbli">
+            <p class="role-date">Sept 2026 – Present</p>
+            <img class="role-logo" src="images/logo-cobbli.png" alt="" width="40" height="40" />
+            <div class="role-body">
+              <h3>Software Engineer Intern</h3>
+              <p class="org org-lg">Cobbli</p>
+              <p class="role-place">New York, New York</p>
             </div>
-            <span class="job-company">Infosys Limited</span>
-            <p class="job-desc">
-              Building a social navigation system for autonomous robots in ROS2 Nav2 and Gazebo to interpret live camera imagery
-              and predict human trajectories for context-aware path planning in crowded environments.
+            <p class="role-summary">
+              Built a full-stack NYC repair platform for leather goods, with authentication, Stripe payments, and a FastAPI and Supabase backend.
             </p>
-          </div>
-        </div>
+            <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Software Engineer Intern at Cobbli"></button>
+          </article>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <span class="job-title">Undergraduate Researcher</span>
-              <span class="job-date">Jan 2026 – Present</span>
+          <article class="role" data-detail="ecl">
+            <p class="role-date">Jan 2026 – Present</p>
+            <img class="role-logo" src="images/logo-columbia.png" alt="" width="40" height="40" />
+            <div class="role-body">
+              <h3>Columbia Undergraduate Researcher</h3>
+              <p class="org org-lg">Economic Complexity Lab</p>
+              <p class="role-place">New York, New York</p>
             </div>
-            <span class="job-company">Columbia Economic Complexity Lab</span>
-            <p class="job-desc">
-              Built an automated report-generation pipeline in Python/Jupyter and Plotly to process and model 5+ years of UN
-              Comtrade trade data across 130+ countries and 18 industry categories, producing country reports for researchers.
+            <p class="role-summary">
+              Built an automated Python pipeline to model UN Comtrade trade data and measure economic complexity across countries and industries.
             </p>
-          </div>
-        </div>
+            <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Columbia Undergraduate Researcher at Economic Complexity Lab"></button>
+          </article>
 
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <span class="job-title">Navigation Lead @ Columbia Space Initiative</span>
-              <span class="job-date">Sept 2025 - May 2026</span>
+          <article class="role" data-detail="infosys">
+            <p class="role-date">June 2026 – Aug 2026</p>
+            <img class="role-logo" src="images/logo-infosys.jpg" alt="" width="40" height="40" />
+            <div class="role-body">
+              <h3>Software Engineer Intern</h3>
+              <p class="org org-lg">Infosys Limited</p>
+              <p class="role-place">Bangalore, India</p>
             </div>
-            <span class="job-company">NASA Spacesuit User Interface Technologies</span>
-            <p class="job-desc">
-              Developed AR software in Unity (C#) for the Magic Leap 2 to assist astronauts with terrain navigation.
+            <p class="role-summary">
+              Developed a real-time trajectory predictor using a computer vision and VLM pipeline and engineered a monitoring dashboard for autonomous robots to navigate crowded environments.
             </p>
-          </div>
-        </div>
+            <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Software Engineer Intern at Infosys Limited"></button>
+          </article>
 
-      </div>
-
-      <!-- Languages -->
-      <h3 class="stack-title">Tech Stack</h3>
-      <div class="languages-section" style="margin-bottom: 2rem;">
-        <h3 class="languages-title">Languages</h3>
-        <div class="languages-grid">
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
-            <span>Java</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />
-            <span>Python</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" />
-            <span>C</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" />
-            <span>C#</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" />
-            <span>C++</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <span>JavaScript</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" />
-            <span>HTML</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" />
-            <span>CSS</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" alt="SQL" />
-            <span>SQL</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg" alt="Swift" />
-            <span>Swift</span>
-          </div>
-          <div class="lang-item">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg" alt="Bash" />
-            <span>Bash</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tech Stack -->
-      <div class="stack-section">
-        <div class="stack-grid">
-          <span class="stack-tag">ROS2</span>
-          <span class="stack-tag">Gazebo</span>
-          <span class="stack-tag">Unity</span>
-          <span class="stack-tag">Arduino</span>
-          <span class="stack-tag">Solidworks</span>
-          <span class="stack-tag">React</span>
-          <span class="stack-tag">Node.js</span>
-          <span class="stack-tag">Git</span>
-          <span class="stack-tag">NumPy</span>
-          <span class="stack-tag">Pandas</span>
-          <span class="stack-tag">Matplotlib</span>
-          <span class="stack-tag">Supabase</span>
-          <span class="stack-tag">Firebase</span>
-          <span class="stack-tag">MongoDB</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="section-inner">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-
-        <div class="project-card project-card--sync" data-github="https://github.com/wang-julia/SyncRideShare">
-          <div class="project-top">
-            <div class="project-card-links">
-              <a href="https://github.com/wang-julia/SyncRideShare" target="_blank" rel="noopener" title="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
+          <article class="role" data-detail="clinic">
+            <p class="role-date">June 2025 – Aug 2025</p>
+            <img class="role-logo" src="images/logo-clinic.jpg" alt="" width="40" height="40" />
+            <div class="role-body">
+              <h3>Software Engineer Intern</h3>
+              <p class="org org-lg">Cleveland Clinic</p>
+              <p class="role-place">Cleveland, Ohio</p>
             </div>
-          </div>
-          <h3 class="project-name">Sync Rideshare (Hackathon Winner)</h3>
-          <p class="project-desc">
-            An AI-powered carpooling app that matches riders, lets them coordinate in chat, and split fares.
-          </p>
-          <div class="project-tags">
-            <span>TypeScript</span>
-            <span>React</span>
-            <span>Supabase</span>
-            <span>Flowglad</span>
-          </div>
+            <p class="role-summary">
+              Built an ETL pipeline that turns electronic health records into a database for sickle cell disease research.
+            </p>
+            <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Software Engineer Intern at Cleveland Clinic"></button>
+          </article>
         </div>
 
-        <div class="project-card project-card--nasa" data-github="https://github.com/columbiaspace/SUITS-MagicLeap-26">
-          <div class="project-top">
-            <div class="project-card-links">
-              <a href="https://github.com/columbiaspace/SUITS-MagicLeap-26" target="_blank" rel="noopener" title="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-            </div>
+        <h3 class="skills-title">Skills</h3>
+        <dl class="skills">
+          <div>
+            <dt>Languages &amp; Frameworks</dt>
+            <dd>Python, Java, C/C++/C#, JavaScript, HTML, CSS, SQL, React, Node.js</dd>
           </div>
-          <h3 class="project-name">Columbia Space Initiative</h3>
-          <p class="project-desc">
-            Designing AR technologies for NASA Spacesuit User Interface Technologies (SUITS). 
-          </p>
-          <div class="project-tags">
-            <span>C#</span>
-            <span>Unity</span>
-            <span>Magic Leap 2</span>
+          <div>
+            <dt>Databases &amp; Tools</dt>
+            <dd>Supabase, MongoDB, Firebase, PostgreSQL, AWS, RestAPI, NumPy, Pandas, Matplotlib, Git, Figma, WordPress</dd>
           </div>
-        </div>
-
-        <div class="project-card project-card--inspectra" data-github="https://github.com/wang-julia/inspectra">
-          <div class="project-top">
-            <div class="project-card-links">
-              <a href="https://github.com/wang-julia/inspectra" target="_blank" rel="noopener" title="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-            </div>
+          <div>
+            <dt>Interests</dt>
+            <dd>Mahjong, Crochet, Pickleball, Swimming, Frozen Yogurt</dd>
           </div>
-          <h3 class="project-name">Inspectra</h3>
-          <p class="project-desc">
-            A multi-AI agent system that give medical companies a smarter way to stay FDA compliant.
-          </p>
-          <div class="project-tags">
-            <span>TypeScript</span>
-            <span>React</span>
-            <span>Express</span>
-            <span>MongoDB</span>
-            <span>Auth0</span>
-          </div>
-        </div>
-
-        <div class="project-card project-card--vlm" data-github="https://github.com/wang-julia/vlm-amr-26">
-          <div class="project-top">
-            <div class="project-card-links">
-              <a href="https://github.com/wang-julia/vlm-amr-26" target="_blank" rel="noopener" title="GitHub">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.03c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.77-1.34-1.77-1.1-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.69.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-name">VLM for Autonomous Robot</h3>
-          <p class="project-desc">
-            A vision-language model that enables robots to navigate crowded environments.
-          </p>
-          <div class="project-tags">
-            <span>Python</span>
-            <span>Qwen-VL</span>
-            <span>ROS2</span>
-          </div>
-        </div>
-
+        </dl>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FOOTER -->
+    <section id="projects">
+      <div class="section-inner">
+        <h2>Projects</h2>
+        <div class="project-list">
+          <a class="project" href="https://github.com/wang-julia/mozaic" target="_blank" rel="noopener">
+            <span class="thumb">
+              <img class="thumb-center" src="images/mozaic.jpg" alt="" />
+            </span>
+            <span class="project-body">
+              <span class="project-title">
+                <span class="project-name">Mozaic <span class="aside">HackMIT 2026 Regeneron Winner</span></span>
+                <span class="go">GitHub</span>
+              </span>
+              <span class="project-desc">A clinical-trial companion where patients keep a health passport, find studies, and researchers scan a scoped profile.</span>
+              <span class="project-meta">TypeScript · Next.js · SQLite · Elasticsearch · Meta API</span>
+              <span class="project-date">Sep 2026</span>
+            </span>
+          </a>
+
+          <a class="project" href="https://github.com/wang-julia/News-Next-Door" target="_blank" rel="noopener">
+            <span class="thumb">
+              <img class="thumb-logo" src="images/news-next-door.png" alt="" />
+            </span>
+            <span class="project-body">
+              <span class="project-title">
+                <span class="project-name">News Next Door <span class="aside">DivHacks 2026 Sponsor Winner</span></span>
+                <span class="go">GitHub</span>
+              </span>
+              <span class="project-desc">A neighborhood paper that translates and simplifies local news and city updates into plain language you can read or hear.</span>
+              <span class="project-meta">TypeScript · React · Hono · SQLite · ElevenLabs · Photon</span>
+              <span class="project-date">Sep 2026</span>
+            </span>
+          </a>
+
+          <a class="project" href="https://github.com/wang-julia/vlm-amr-26" target="_blank" rel="noopener">
+            <span class="thumb">
+              <img class="thumb-center" src="images/infosys.jpg" alt="" />
+            </span>
+            <span class="project-body">
+              <span class="project-title">
+                <span class="project-name">Computer Vision and VLM for Autonomous Robot <span class="aside">Public MVP</span></span>
+                <span class="go">GitHub</span>
+              </span>
+              <span class="project-desc">Computer vision and VLM pipeline that enables robots to navigate crowded environments.</span>
+              <span class="project-meta">Python · Qwen-VL · YOLOv8 · Depth Anything · React · SQL</span>
+              <span class="project-date">June 2026 – Aug 2026</span>
+            </span>
+          </a>
+
+          <a class="project" href="https://github.com/wang-julia/inspectra" target="_blank" rel="noopener">
+            <span class="thumb">
+              <img src="images/inspectra.jpg" alt="" />
+            </span>
+            <span class="project-body">
+              <span class="project-title">
+                <span class="project-name">Inspectra <span class="aside">Yale Hack 2026</span></span>
+                <span class="go">GitHub</span>
+              </span>
+              <span class="project-desc">A multi-AI agent system that gives medical companies a smarter way to stay FDA compliant.</span>
+              <span class="project-meta">TypeScript · React · Express · MongoDB · Auth0</span>
+              <span class="project-date">March 2026</span>
+            </span>
+          </a>
+
+          <a class="project" href="https://github.com/wang-julia/SyncRideShare" target="_blank" rel="noopener">
+            <span class="thumb">
+              <img class="thumb-sync" src="images/sync-logo.png" alt="" />
+            </span>
+            <span class="project-body">
+              <span class="project-title">
+                <span class="project-name">Sync Rideshare <span class="aside">DevFest 2026 Sponsor Winner</span></span>
+                <span class="go">GitHub</span>
+              </span>
+              <span class="project-desc">An AI-powered carpooling app that matches riders, lets them coordinate in chat, and split fares.</span>
+              <span class="project-meta">TypeScript · React · Supabase · Flowglad</span>
+              <span class="project-date">Feb 2026</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="leadership">
+      <div class="section-inner">
+        <h2>Leadership</h2>
+        <div class="project-list">
+          <a class="project" href="https://www.adicu.com/" target="_blank" rel="noopener">
+            <span class="thumb">
+              <img class="thumb-center" src="images/adi.png" alt="Application Development Initiative" />
+            </span>
+            <span class="project-body">
+              <span class="project-title">
+                <span class="project-name">Internal/External Committee</span>
+                <span class="go">Site</span>
+              </span>
+              <span class="project-org">Application Development Initiative</span>
+              <span class="project-desc">Creating communities and professional opportunities for Columbia CS students.</span>
+              <span class="project-date">January 2026 – Present</span>
+            </span>
+          </a>
+
+          <a class="project" href="https://github.com/columbiaspace/SUITS-MagicLeap-26" target="_blank" rel="noopener">
+            <span class="thumb">
+              <img src="images/nasa-suits.webp" alt="" />
+            </span>
+            <span class="project-body">
+              <span class="project-title">
+                <span class="project-name">Columbia Space Initiative Subteam Lead</span>
+                <span class="go">GitHub</span>
+              </span>
+              <span class="project-org">NASA Spacesuit User Interface Technologies</span>
+              <span class="project-desc">Designing AR technologies for NASA Spacesuit User Interface Technologies (SUITS).</span>
+              <span class="project-meta">C# · Unity · Magic Leap 2</span>
+              <span class="project-date">October 2025 – Present</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="section-inner">
+        <h2>Gallery</h2>
+        <div class="gallery">
+          <div class="gallery-row">
+            <figure class="shot">
+              <img src="images/infosys-friends.jpg" width="1024" height="768" alt="Infosys intern friends in front of a domed building" />
+              <figcaption>Infosys intern friends</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/mimis.jpg" width="768" height="1024" alt="Two cups of Mimi's frozen yogurt" />
+              <figcaption>Mimi's frozen yogurt</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-row">
+            <figure class="shot">
+              <img src="images/taj-mahal.jpg" width="1024" height="682" alt="Standing in front of the Taj Mahal" />
+              <figcaption>Taj Mahal this summer</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/dubuhaus.jpg" width="768" height="1024" alt="A table of dishes at DubuHaus" />
+              <figcaption>DubuHaus: My #1 restaurant</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-row">
+            <figure class="shot">
+              <img src="images/columbia-friends.jpg" width="576" height="1024" alt="Columbia friends on the Low Library steps" />
+              <figcaption>My Columbia friends</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/nasa-jsc.jpg" width="1024" height="682" alt="NASA JSC site testing with the Columbia Space Initiative team" />
+              <figcaption>NASA JSC site testing</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
   <footer>
-    <div class="footer-nav">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
+    <p class="footer-name">Julia Wang</p>
+    <p class="footer-meta">Columbia University</p>
+    <div class="footer-links">
+      <a href="mailto:jwang.kq@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/yjuliawang/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/wang-julia" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://drive.google.com/file/d/1GAc6OFe9pJGJmtInoXFxtSj1iFJ6mlkV/view?usp=sharing" target="_blank" rel="noopener">Resume</a>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <template id="detail-cobbli">
+    <li>Built a full-stack NYC repair platform for leather goods, integrating JWT authentication, signed Stripe webhooks, and tokenized links.</li>
+    <li>Implemented a 26-endpoint FastAPI service and Supabase/PostgreSQL backend for persistent customer profiles, repair requests, and order tracking, while modularizing the React frontend with dynamic routing and role-based access for AWS and Vercel deployment.</li>
+  </template>
+  <template id="detail-infosys">
+    <li>Developed a real-time human trajectory predictor for autonomous mobile robots, using YOLOv8, DepthAnything, and InternVL to derive 3D angle and velocity projections, achieving 99.5% navigation accuracy in crowded environments.</li>
+    <li>Deployed a scalable path-planning pipeline with A* search and JSON-to-costmap conversions for obstacle avoidance, implementing a Python simulation framework with dynamic pedestrian actors to stress-test system reliability across 100+ trials.</li>
+    <li>Built a full-stack monitoring system with FastAPI and PostgreSQL to store robot moves, pedestrian trajectories, and path plans, using REST endpoints for data retrieval and WebSockets to stream live telemetry to a React dashboard for safety monitoring.</li>
+  </template>
+  <template id="detail-ecl">
+    <li>Engineered an automated data pipeline in Python to ingest, transform, and model 5+ years of UN Comtrade trade data across 130+ countries and 18 industry categories, using Pandas for data validation before generating structured research reports.</li>
+    <li>Built economic complexity algorithms in NumPy and SciPy, applying eigenvector decomposition and matrix transformations to quantify country complexity from trade diversity and product ubiquity across 1000+ products.</li>
+    <li>Developed a greedy budget allocation algorithm to maximize gains in economic complexity index across 4 investment scenarios (5-20%), identifying high-impact industries for countries to invest in to strengthen economic diversification.</li>
+  </template>
+  <template id="detail-clinic">
+    <li>Built an ETL pipeline using SQL and Excel to ingest and transform 200+ electronic health records into a centralized relational database, automating data extraction for sickle cell disease research and reducing manual data preparation for clinicians by 70%.</li>
+    <li>Implemented Python analytics and workflows to query clinical data, run regression and correlation analyses, and visualize results.</li>
+  </template>
+
+  <dialog id="experience-dialog" class="experience-dialog" aria-labelledby="experience-dialog-title">
+    <div class="experience-dialog-card">
+      <button type="button" class="experience-dialog-close" data-close>Close</button>
+      <h3 id="experience-dialog-title"></h3>
+      <p class="experience-dialog-org"></p>
+      <p class="experience-dialog-date"></p>
+      <p class="experience-dialog-place"></p>
+      <ul class="experience-dialog-list"></ul>
+    </div>
+  </dialog>
+
+  <script src="main.js?v=9"></script>
 </body>
 </html>
