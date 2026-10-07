@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Julia Wang</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="style.css?v=39" />
+  <link rel="stylesheet" href="style.css?v=77" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
@@ -19,7 +19,7 @@
       <span></span>
     </div>
     <div class="nav-inner">
-      <a class="nav-logo" href="#top">Julia Wang</a>
+      <a class="nav-logo" href="#top"><img src="favicon.svg" alt="" width="22" height="22" />Julia Wang</a>
       <nav aria-label="Page">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -64,7 +64,10 @@
               with a particular focus on applying software to physical systems, healthcare, and finance.
             </p>
             <p>
-              Outside of coding, I enjoy playing mahjong, swimming, pickleball, crocheting, and trying new eats around NYC!
+              Outside of coding, I enjoy playing mahjong, swimming, pickleball, crocheting, scrapbooking, and trying new eats around NYC (especially froyo)!
+            </p>
+            <p class="froyo-link">
+              <a href="froyo.html">my froyo rankings<svg class="froyo-arrow" viewBox="0 0 10 10" width="10" height="10" aria-hidden="true"><path d="M2.4 7.6 7.6 2.4M4.2 2.4h3.4V5.8" fill="none" stroke="currentColor" stroke-width="0.9" stroke-linecap="square" stroke-linejoin="miter"/></svg></a>
             </p>
           </div>
         </div>
@@ -84,7 +87,7 @@
               <p class="role-place">New York, New York</p>
             </div>
             <p class="role-summary">
-              Built a full-stack NYC repair platform for leather goods, with authentication, Stripe payments, and a FastAPI and Supabase backend.
+              Built a full-stack NYC repair platform for leather goods, with JWT authentication, Stripe payments, and a FastAPI and Supabase backend.
             </p>
             <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Software Engineer Intern at Cobbli"></button>
           </article>
@@ -112,7 +115,7 @@
               <p class="role-place">Bangalore, India</p>
             </div>
             <p class="role-summary">
-              Developed a real-time trajectory predictor using a computer vision and VLM pipeline and engineered a monitoring dashboard for autonomous robots to navigate crowded environments.
+              Developed a real-time human trajectory predictor using a computer vision and VLM pipeline with a full-stack monitoring dashboard for autonomous robots to navigate crowded environments.
             </p>
             <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Software Engineer Intern at Infosys Limited"></button>
           </article>
@@ -147,6 +150,18 @@
             <dd>Mahjong, Crochet, Pickleball, Swimming, Frozen Yogurt</dd>
           </div>
         </dl>
+
+        <h3 class="skills-title">Courses</h3>
+        <dl class="skills">
+          <div>
+            <dt>CS</dt>
+            <dd>Data Structures and Algorithms, C++ Deep Dive, Advanced Programming in C, Fundamentals of Computer Systems</dd>
+          </div>
+          <div>
+            <dt>Math</dt>
+            <dd>Discrete Math, Linear Algebra, Probability Theory, Multivariable Calculus</dd>
+          </div>
+        </dl>
       </div>
     </section>
 
@@ -154,80 +169,99 @@
       <div class="section-inner">
         <h2>Projects</h2>
         <div class="project-list">
-          <a class="project" href="https://github.com/wang-julia/mozaic" target="_blank" rel="noopener">
+          <article class="project">
+            <a class="project-hit" href="https://github.com/wang-julia/mozaic" target="_blank" rel="noopener" aria-label="Mozaic on GitHub"></a>
             <span class="thumb">
-              <img class="thumb-center" src="images/mozaic.jpg" alt="" />
+              <img class="thumb-logo thumb-mozaic" src="images/mozaic-logo.png?v=4" alt="" />
             </span>
             <span class="project-body">
               <span class="project-title">
                 <span class="project-name">Mozaic <span class="aside">HackMIT 2026 Regeneron Winner</span></span>
-                <span class="go">GitHub</span>
+                <span class="project-links">
+                  <a class="go" href="https://plume.hackmit.org/project/jupxp-mskne-ykjyb-vpygr" target="_blank" rel="noopener">Plume</a>
+                  <a class="go" href="https://github.com/wang-julia/mozaic" target="_blank" rel="noopener">GitHub</a>
+                </span>
               </span>
-              <span class="project-desc">A clinical-trial companion where patients keep a health passport, find studies, and researchers scan a scoped profile.</span>
+              <span class="project-desc">A clinical-trial companion where patients keep a health passport and find studies, while researchers scan a scoped profile.</span>
               <span class="project-meta">TypeScript · Next.js · SQLite · Elasticsearch · Meta API</span>
               <span class="project-date">Sep 2026</span>
             </span>
-          </a>
+          </article>
 
-          <a class="project" href="https://github.com/wang-julia/News-Next-Door" target="_blank" rel="noopener">
+          <article class="project">
+            <a class="project-hit" href="https://github.com/wang-julia/News-Next-Door" target="_blank" rel="noopener" aria-label="News Next Door on GitHub"></a>
             <span class="thumb">
               <img class="thumb-logo" src="images/news-next-door.png" alt="" />
             </span>
             <span class="project-body">
               <span class="project-title">
                 <span class="project-name">News Next Door <span class="aside">DivHacks 2026 Sponsor Winner</span></span>
-                <span class="go">GitHub</span>
+                <span class="project-links">
+                  <a class="go" href="https://devpost.com/software/news-next-door" target="_blank" rel="noopener">Devpost</a>
+                  <a class="go" href="https://github.com/wang-julia/News-Next-Door" target="_blank" rel="noopener">GitHub</a>
+                </span>
               </span>
-              <span class="project-desc">A neighborhood paper that translates and simplifies local news and city updates into plain language you can read or hear.</span>
+              <span class="project-desc">A multilingual neighborhood website that translates and simplifies local news and city updates into plain language you can read or hear.</span>
               <span class="project-meta">TypeScript · React · Hono · SQLite · ElevenLabs · Photon</span>
               <span class="project-date">Sep 2026</span>
             </span>
-          </a>
+          </article>
 
-          <a class="project" href="https://github.com/wang-julia/vlm-amr-26" target="_blank" rel="noopener">
+          <article class="project">
+            <a class="project-hit" href="https://github.com/wang-julia/vlm-amr-26" target="_blank" rel="noopener" aria-label="CV and VLM Pipeline for Autonomous Robots on GitHub"></a>
             <span class="thumb">
               <img class="thumb-center" src="images/infosys.jpg" alt="" />
             </span>
             <span class="project-body">
               <span class="project-title">
-                <span class="project-name">Computer Vision and VLM for Autonomous Robot <span class="aside">Public MVP</span></span>
-                <span class="go">GitHub</span>
+                <span class="project-name">CV and VLM Pipeline for Autonomous Robots <span class="aside">Public MVP</span></span>
+                <span class="project-links">
+                  <a class="go" href="https://github.com/wang-julia/vlm-amr-26" target="_blank" rel="noopener">GitHub</a>
+                </span>
               </span>
               <span class="project-desc">Computer vision and VLM pipeline that enables robots to navigate crowded environments.</span>
               <span class="project-meta">Python · Qwen-VL · YOLOv8 · Depth Anything · React · SQL</span>
               <span class="project-date">June 2026 – Aug 2026</span>
             </span>
-          </a>
+          </article>
 
-          <a class="project" href="https://github.com/wang-julia/inspectra" target="_blank" rel="noopener">
+          <article class="project">
+            <a class="project-hit" href="https://github.com/wang-julia/inspectra" target="_blank" rel="noopener" aria-label="Inspectra on GitHub"></a>
             <span class="thumb">
               <img src="images/inspectra.jpg" alt="" />
             </span>
             <span class="project-body">
               <span class="project-title">
                 <span class="project-name">Inspectra <span class="aside">Yale Hack 2026</span></span>
-                <span class="go">GitHub</span>
+                <span class="project-links">
+                  <a class="go" href="https://devpost.com/software/inspectra" target="_blank" rel="noopener">Devpost</a>
+                  <a class="go" href="https://github.com/wang-julia/inspectra" target="_blank" rel="noopener">GitHub</a>
+                </span>
               </span>
-              <span class="project-desc">A multi-AI agent system that gives medical companies a smarter way to stay FDA compliant.</span>
+              <span class="project-desc">A multi-AI agent RAG system that gives medical companies a smarter way to stay FDA compliant.</span>
               <span class="project-meta">TypeScript · React · Express · MongoDB · Auth0</span>
               <span class="project-date">March 2026</span>
             </span>
-          </a>
+          </article>
 
-          <a class="project" href="https://github.com/wang-julia/SyncRideShare" target="_blank" rel="noopener">
+          <article class="project">
+            <a class="project-hit" href="https://github.com/wang-julia/SyncRideShare" target="_blank" rel="noopener" aria-label="Sync Rideshare on GitHub"></a>
             <span class="thumb">
               <img class="thumb-sync" src="images/sync-logo.png" alt="" />
             </span>
             <span class="project-body">
               <span class="project-title">
                 <span class="project-name">Sync Rideshare <span class="aside">DevFest 2026 Sponsor Winner</span></span>
-                <span class="go">GitHub</span>
+                <span class="project-links">
+                  <a class="go" href="https://devpost.com/software/sync-fk05vs" target="_blank" rel="noopener">Devpost</a>
+                  <a class="go" href="https://github.com/wang-julia/SyncRideShare" target="_blank" rel="noopener">GitHub</a>
+                </span>
               </span>
               <span class="project-desc">An AI-powered carpooling app that matches riders, lets them coordinate in chat, and split fares.</span>
               <span class="project-meta">TypeScript · React · Supabase · Flowglad</span>
               <span class="project-date">Feb 2026</span>
             </span>
-          </a>
+          </article>
         </div>
       </div>
     </section>
@@ -235,37 +269,33 @@
     <section id="leadership">
       <div class="section-inner">
         <h2>Leadership</h2>
-        <div class="project-list">
-          <a class="project" href="https://www.adicu.com/" target="_blank" rel="noopener">
-            <span class="thumb">
-              <img class="thumb-center" src="images/adi.png" alt="Application Development Initiative" />
-            </span>
-            <span class="project-body">
-              <span class="project-title">
-                <span class="project-name">Internal/External Committee</span>
-                <span class="go">Site</span>
-              </span>
-              <span class="project-org">Application Development Initiative</span>
-              <span class="project-desc">Creating communities and professional opportunities for Columbia CS students.</span>
-              <span class="project-date">January 2026 – Present</span>
-            </span>
-          </a>
+        <div class="lead-row">
+          <article class="lead" data-detail="csi">
+            <img class="lead-mark" src="images/nasa-suits.webp" alt="" width="80" height="80" />
+            <span class="lead-role">Columbia Space Initiative Subteam Lead</span>
+            <span class="lead-org">NASA Spacesuit User Interface Technologies</span>
+            <span class="lead-date">Oct 2025 – Present</span>
+            <a class="lead-go" href="https://github.com/columbiaspace/SUITS-MagicLeap-26" target="_blank" rel="noopener">GitHub</a>
+            <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Columbia Space Initiative Subteam Lead"></button>
+          </article>
 
-          <a class="project" href="https://github.com/columbiaspace/SUITS-MagicLeap-26" target="_blank" rel="noopener">
-            <span class="thumb">
-              <img src="images/nasa-suits.webp" alt="" />
-            </span>
-            <span class="project-body">
-              <span class="project-title">
-                <span class="project-name">Columbia Space Initiative Subteam Lead</span>
-                <span class="go">GitHub</span>
-              </span>
-              <span class="project-org">NASA Spacesuit User Interface Technologies</span>
-              <span class="project-desc">Designing AR technologies for NASA Spacesuit User Interface Technologies (SUITS).</span>
-              <span class="project-meta">C# · Unity · Magic Leap 2</span>
-              <span class="project-date">October 2025 – Present</span>
-            </span>
-          </a>
+          <article class="lead" data-detail="adi">
+            <img class="lead-mark" src="images/adi.png" alt="Application Development Initiative" width="80" height="80" />
+            <span class="lead-role">Internal/External <span class="lead-role-line">Committee</span></span>
+            <span class="lead-org">Application Development Initiative</span>
+            <span class="lead-date">Jan 2026 – Present</span>
+            <a class="lead-go" href="https://www.adicu.com/" target="_blank" rel="noopener">Site</a>
+            <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Internal/External Committee at Application Development Initiative"></button>
+          </article>
+
+          <article class="lead" data-detail="gwc">
+            <img class="lead-mark" src="images/girls-who-code.png" alt="Girls Who Code" width="80" height="80" />
+            <span class="lead-role">Committee and Data Structures Instructor</span>
+            <span class="lead-org">Girls Who Code</span>
+            <span class="lead-date">Sept 2026 – Present</span>
+            <a class="lead-go" href="https://girlswhocode.com/" target="_blank" rel="noopener">Site</a>
+            <button type="button" class="role-open" aria-haspopup="dialog" aria-controls="experience-dialog" aria-expanded="false" aria-label="View details for Committee and Data Structures Instructor at Girls Who Code"></button>
+          </article>
         </div>
       </div>
     </section>
@@ -273,35 +303,94 @@
     <section id="gallery">
       <div class="section-inner">
         <h2>Gallery</h2>
+        <p class="gallery-sub">food, friends, and fun</p>
         <div class="gallery">
           <div class="gallery-row">
             <figure class="shot">
+              <img src="images/rafting-goa.jpg" width="1024" height="768" alt="White water rafting in Goa, India" />
+              <figcaption>white water rafting in goa</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/west-village.jpg" width="768" height="1024" alt="Friends sitting on a West Village stoop" />
+              <figcaption>a break in west village</figcaption>
+            </figure>
+            <figure class="shot">
               <img src="images/infosys-friends.jpg" width="1024" height="768" alt="Infosys intern friends in front of a domed building" />
-              <figcaption>Infosys intern friends</figcaption>
+              <figcaption>infosys intern friends while in bangalore</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-row">
+            <figure class="shot">
+              <img src="images/myka-froyo.jpg" width="768" height="1024" alt="A cup of Myka frozen yogurt" />
+              <figcaption>myka froyo (the best)</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/divhacks-2026.jpg" width="1024" height="768" alt="Team on stage at DivHacks 2026" />
+              <figcaption>divhacks 2026</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/taj-mahal.jpg" width="1024" height="682" alt="Standing in front of the Taj Mahal" />
+              <figcaption>taj mahal excursion</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-row">
+            <figure class="shot">
+              <img src="images/florida-shells.jpg" width="1024" height="683" alt="Seashells collected on a Florida beach" />
+              <figcaption>shells i collected in florida</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/columbia-friends.jpg" width="576" height="1024" alt="Columbia friends on the Low Library steps" />
+              <figcaption>my columbia friends</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/berryline.jpg" width="768" height="1024" alt="Two cups of Berryline frozen yogurt" />
+              <figcaption>berryline in boston</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-row">
+            <figure class="shot">
+              <img src="images/lindustrie-pizza.jpg" width="768" height="1024" alt="Holding a box of L'industrie pizza" />
+              <figcaption>l'industrie pizza!</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/hackmit-2026.jpg" width="1024" height="768" alt="Mozaic team at HackMIT 2026" />
+              <figcaption>hackmit 2026</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/columbia-sunset.jpg" width="768" height="1024" alt="Sunset over Columbia's campus" />
+              <figcaption>columbia sunset</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/pinkberry.jpg" width="768" height="1024" alt="Two cups of Pinkberry frozen yogurt" />
+              <figcaption>pinkberry froyo</figcaption>
+            </figure>
+          </div>
+          <div class="gallery-row">
+            <figure class="shot">
+              <img src="images/nasa-jsc.jpg" width="1024" height="682" alt="NASA JSC site testing with the Columbia Space Initiative team" />
+              <figcaption>nasa johnson space center site testing</figcaption>
             </figure>
             <figure class="shot">
               <img src="images/mimis.jpg" width="768" height="1024" alt="Two cups of Mimi's frozen yogurt" />
-              <figcaption>Mimi's frozen yogurt</figcaption>
+              <figcaption>mimi's frozen yogurt</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/sunset-beach.jpg" width="1024" height="683" alt="A quiet beach at dusk" />
+              <figcaption>can you tell i love sunsets?</figcaption>
             </figure>
           </div>
           <div class="gallery-row">
-            <figure class="shot">
-              <img src="images/taj-mahal.jpg" width="1024" height="682" alt="Standing in front of the Taj Mahal" />
-              <figcaption>Taj Mahal this summer</figcaption>
-            </figure>
             <figure class="shot">
               <img src="images/dubuhaus.jpg" width="768" height="1024" alt="A table of dishes at DubuHaus" />
-              <figcaption>DubuHaus: My #1 restaurant</figcaption>
-            </figure>
-          </div>
-          <div class="gallery-row">
-            <figure class="shot">
-              <img src="images/columbia-friends.jpg" width="576" height="1024" alt="Columbia friends on the Low Library steps" />
-              <figcaption>My Columbia friends</figcaption>
+              <figcaption>dubuhaus: my #1 restaurant</figcaption>
             </figure>
             <figure class="shot">
-              <img src="images/nasa-jsc.jpg" width="1024" height="682" alt="NASA JSC site testing with the Columbia Space Initiative team" />
-              <figcaption>NASA JSC site testing</figcaption>
+              <img src="images/infosys-pyramid.jpg" width="768" height="1024" alt="Standing in front of the Infosys campus pyramid" />
+              <figcaption>infosys campus pyramid</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="images/clearwater-sunset.jpg" width="683" height="1024" alt="Sunset over Clearwater Beach" />
+              <figcaption>clearwater beach sunset</figcaption>
             </figure>
           </div>
         </div>
@@ -338,6 +427,19 @@
     <li>Built an ETL pipeline using SQL and Excel to ingest and transform 200+ electronic health records into a centralized relational database, automating data extraction for sickle cell disease research and reducing manual data preparation for clinicians by 70%.</li>
     <li>Implemented Python analytics and workflows to query clinical data, run regression and correlation analyses, and visualize results.</li>
   </template>
+  <template id="detail-csi">
+    <li>Developed 3D AR software in Unity C# for the Magic Leap 2 headset to assist astronauts with lunar terrain navigation and EVA.</li>
+    <li>Managed development across a 20-member Navigation subteam, directing weekly sprints, task delegation, Git branching/PR workflows, code reviews, and implementation of an AI voice assistant and dynamic A* path-finding system using real-time telemetry.</li>
+    <li>Led team through weeklong testing at NASA JSC, managing flight logistics and team safety, while driving daily build/test cycles.</li>
+  </template>
+  <template id="detail-adi">
+    <li>Plan 10+ events per semester serving Columbia’s 1,400+ undergraduate CS students, creating opportunities for technical learning, networking, and professional development.</li>
+    <li>Lead outreach to companies, engineers, and recruiters to organize professional panels and connect students with industry insights and career opportunities.</li>
+  </template>
+  <template id="detail-gwc">
+    <li>Lead recruitment and outreach efforts through in-person and virtual panels, introducing NYC high school girls to opportunities in computer science, technology, and engineering.</li>
+    <li>Teach weekly in-person data structures classes, guiding students through core concepts including arrays, linked lists, trees, graphs, and algorithmic problem-solving.</li>
+  </template>
 
   <dialog id="experience-dialog" class="experience-dialog" aria-labelledby="experience-dialog-title">
     <div class="experience-dialog-card">
@@ -350,6 +452,6 @@
     </div>
   </dialog>
 
-  <script src="main.js?v=9"></script>
+  <script src="main.js?v=10"></script>
 </body>
 </html>

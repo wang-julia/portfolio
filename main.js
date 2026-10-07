@@ -39,17 +39,23 @@ if (experienceDialog) {
   const dialogList = experienceDialog.querySelector(".experience-dialog-list");
   let lastTrigger = null;
 
-  function openExperience(role) {
-    const template = document.getElementById(`detail-${role.dataset.detail}`);
-    const trigger = role.querySelector(".role-open");
+  function openDetail(card) {
+    const template = document.getElementById(`detail-${card.dataset.detail}`);
+    const trigger = card.querySelector(".role-open");
     if (!template || !trigger) return;
 
-    dialogTitle.textContent = role.querySelector("h3").textContent.trim();
-    const org = role.querySelector(".org");
-    dialogOrg.textContent = org.textContent.trim();
-    dialogOrg.className = `experience-dialog-org ${org.className}`;
-    dialogDate.textContent = role.querySelector(".role-date").textContent.trim();
-    dialogPlace.textContent = role.querySelector(".role-place").textContent.trim();
+    const title = card.querySelector("h3, .lead-role");
+    dialogTitle.textContent = title.textContent.replace(/\s+/g, " ").trim();
+    const org = card.querySelector(".org, .lead-org");
+    dialogOrg.textContent = org ? org.textContent.trim() : "";
+    dialogOrg.className = org && org.classList.contains("org")
+      ? `experience-dialog-org ${org.className}`
+      : "experience-dialog-org";
+    const date = card.querySelector(".role-date, .lead-date");
+    dialogDate.textContent = date ? date.textContent.trim() : "";
+    const place = card.querySelector(".role-place");
+    dialogPlace.textContent = place ? place.textContent.trim() : "";
+    dialogPlace.hidden = !dialogPlace.textContent;
     dialogList.replaceChildren(template.content.cloneNode(true));
 
     lastTrigger = trigger;
@@ -57,16 +63,16 @@ if (experienceDialog) {
     if (!experienceDialog.open) experienceDialog.showModal();
   }
 
-  document.querySelectorAll(".role[data-detail]").forEach((role) => {
-    const trigger = role.querySelector(".role-open");
+  document.querySelectorAll(".role[data-detail], .lead[data-detail]").forEach((card) => {
+    const trigger = card.querySelector(".role-open");
     if (trigger) {
       trigger.addEventListener("mousedown", (event) => {
         event.preventDefault();
       });
     }
-    role.addEventListener("click", (event) => {
+    card.addEventListener("click", (event) => {
       if (event.target.closest("a")) return;
-      openExperience(role);
+      openDetail(card);
     });
   });
 
